@@ -1,0 +1,233 @@
+/*----------------------
+  fontawesome
+------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* common styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+}
+.banner_detail a, .highlights_detail a, .image_part a{
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+/* banner styles */
+.banner_part{
+    width: 100%;
+    background-color: #2D25A0;
+}
+.banner{
+    display: flex;
+    margin: auto;
+    padding: 80px 0px;
+}
+.banner:hover .banner_image img{
+    transform: rotate(10deg);
+}
+.banner_detail,
+.banner_image{
+    width: 50%;
+}
+.banner_title{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+
+.banner_detail a i{
+    padding-left: 10px;
+    font-size: 12px;
+}
+.banner_image img {
+    width: 100%;
+    transition: transform 1s ease-out .3s;
+}
+
+/*-----------------------
+     blogs part start 
+---------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    padding-top: 70px;
+}
+.blog{
+    padding: 15px;
+    box-shadow: 2px 2px 7px #9F9F9F;
+}
+.blog  img{
+    width: 100%;
+    height: 256px;
+}
+.blog_title{
+    padding-top: 16px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+.blog_description{
+    padding-top: 5px;
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+/* image_part style */
+.image_part{
+    background: url(../images/football-field.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 130px 0px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.image_part h2{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.image_part p {
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 10px 257px;
+}
+/* highlights styles */
+.highlights{
+    display: flex;
+    padding-top: 110px;
+}
+.highlights_detail,
+.highlights_image{
+    width: 50%;
+}
+ .highlights_title{
+    font-size: 48px;
+    color: #0A0826;
+    padding-top: 62px;
+    padding-bottom: 8px;
+}
+.highlights_info{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 34px;
+}
+.highlights_image img{
+    width: 100%;
+    height: 427px;
+}
+/* footer style */
+.footer_part{
+    text-align: center;
+    padding: 50px 0px;
+}
+.footer_image img{
+    width: 262px;
+}
+.icon i {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: #969BAB;
+    background-color: #E7E7E8;
+    line-height: 32px;
+    margin: 20px 0px;
+}
+.copyright p{
+    font-size: 18px;
+}
+/*----------------------
+   Media queries
+------------------ */
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .banner_detail,
+    .banner_image{
+    width: 100%;
+    }
+    .banner{
+        flex-wrap: wrap;
+        padding-left: 16px;
+    }
+    .banner_title {
+        font-size: 36px;
+    }
+    .banner_image{
+        margin-top: 60px;
+    }
+    .banner_image img {
+        width: 80%;
+        margin-left: 20px;
+    }
+    /* blogs styles */
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:27px;
+        padding-top: 70px;
+    }
+    /* highlight styles */
+     .highlights_detail,
+     .highlights_image{
+    width: 100%;
+    }
+    .highlights{
+        flex-direction: column;
+        padding: 16px;
+    }
+    .highlights_title{
+        font-size: 30px;
+    }
+    .highlights_image{
+        margin-top: 29px;
+    }
+    /* footer styles */
+    .footer_part {
+        padding: 13px 0px;
+    }
+}
+/* Tablet Device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 720px;
+    }
+    /* banner styles */
+    .banner {
+        padding: 40px 0px;
+    }
+    .banner_title {
+        font-size: 40px;
+    }
+    /* blogs styles */
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+/* highlight styles */
+    .highlights_title {
+        font-size: 30px;
+    }
+    .highlights_info{
+        padding-right: 15px;
+    }
+}
+
+
