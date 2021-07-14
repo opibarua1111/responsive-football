@@ -185,6 +185,32 @@ main{
         grid-row-gap:27px;
         padding-top: 70px;
     }
+    /* login part */
+    .login_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login_form input,
+    button {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        border: 1px solid lightgrey;
+        padding-left: 10px;
+    }
+
+    .login_form button {
+        background: rgb(218, 32, 103);
+        color: whitesmoke;
+        font-weight: 700;
+        padding: 5px;
+    }
+    
     /* highlight styles */
      .highlights_detail,
      .highlights_image{
